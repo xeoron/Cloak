@@ -10,7 +10,7 @@ If you want to hide things from non-tech savvy people without having to worry ab
 
 I can not stress this enough: Cloak merely marks files and folders as hidden system files so that Finder (OS X's file manager) and Spotlight (the system search), omits them. Nothing more. This means that if your browse or search for a file or location you will not find it.
 
-Examples
+examples
 ======
 Cloaking the *test* folder looks like this
 
