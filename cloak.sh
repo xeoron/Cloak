@@ -5,13 +5,13 @@
 # Date: 6/23/2013
 # License: GPL 2 or higher
 declare -r NAME="Cloak"
-declare -r VERSION="0.2.3"
+declare -r VERSION="0.2.4"
 
 option=""
 FILE=$2
 
  if [ ! -e $FILE  ]; then
-    echo " $NAME Error - this location does not exist: $2"
+    echo " $NAME Error - this location does not exist: $FILE"
     exit 1;
  else 
 	option=$1
