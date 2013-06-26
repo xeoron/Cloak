@@ -5,7 +5,7 @@
 # Date: 6/23/2013
 # License: GPL 2 or higher
 declare -r NAME="Cloak"
-declare -r VERSION="0.2.2"
+declare -r VERSION="0.2.3"
 
 option=""
 FILE=$2
@@ -29,15 +29,15 @@ FILE=$2
         echo " "
         ;;
     -u|--uncloak)
-        echo " Uncloaking $2 ..."
-        chflags -H -R nohidden "$2"
-        echo " Adding $2 location to Spotlight's index..."
+        echo " Uncloaking $FILE ..."
+        chflags -H -R nohidden "$FILE"
+        echo " Adding $FILE location to Spotlight's index..."
         mdimport $FILE
         ;; 
     -c|--cloak)
-        echo " Cloaking $2 ..."
-    	chflags -H -R hidden "$2"
-    	echo " Removing $2 location from Spotlight's index..."
+        echo " Cloaking $FILE ..."
+    	chflags -H -R hidden "$FILE"
+    	echo " Removing $FILE location from Spotlight's index..."
     	mdutil $FILE >/dev/null
         ;;
     -v|--version)
