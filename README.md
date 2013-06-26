@@ -56,6 +56,37 @@ Severs, such as, *Plex Media Server*, *Apache*, and *Nginx* can find and use loc
 
 If you hook the drive up to another machine it may be able to see those hidden locations without a terminal.
 
+automate when things are findable
+=====
+Set the task scheduler, known as, <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/crontab.5.html#//apple_ref/doc/man/5/crontab" title="OS X Crontab Man Page">crontab</a> to cloak and uncloak files and locations for set periods of time.
+
+Once Cloak is installed, in a terminal create a new task
+
+	crontab -e 
+	
+Choose when you would like the job to run. Every job is a line in your crontab file. The first 5 arguments specify the time to run the job, and the 6th argument is the command to run. 
+
+	Argument 1: Minute (0 - 59)
+	Argument 2: Hour (0 - 23)
+	Argument 3: Day of Month (1 - 31)
+	Argument 4: Month (1-12)
+	Argument 5: Day of Week (0 - 6) Sunday = 0
+	Argument 6: Command
+
+Lets say you want to cloak your *project* folder that is on your Desktop while at work from 8:25am to 6pm Monday through Friday.
+
+	25/8/**/1-5 cloak -c /Users/your-account-name/Desktop/project
+
+This means, *cloak* your *project* folder 25 minutes after the hour, on the 8th hr of the day, every day, every month, monday through friday
+
+	0/18/**/1-5 cloak -u /Users/your-account-name/Desktop/project
+
+This means, *uncloak* your *project* folder 0 minutes after 6pm, every day, every month, Monday through Friday.
+
+Save your crontab task file and it will be set. 
+If you want to check to see what tasks are set to run and when type into a terminal
+
+	crontab -l
 
 requirements
 =====
