@@ -4,17 +4,21 @@
 # Author: Jason Campisi
 # Date: 6/23/2013
 # License: GPL 2 or higher
-declare -r NAME="Cloak"
-declare -r VERSION="0.2.4"
 
-option=""
+declare -r NAME="Cloak"
+declare -r VERSION="0.2.5"
+
+option=$1
 FILE=$2
 
- if [ ! -e $FILE  ]; then
-    echo " $NAME Error - this location does not exist: $FILE"
+ if [ -z "$1" ]; then #if option is not set
+    option="-h"
+ elif [ ! -n "$FILE" ]; then
+    echo " $NAME Error - File or folder name is not set!"
     exit 1;
- else 
-	option=$1
+ elif [ ! -e $FILE ]; then
+    echo " $NAME Error - The location of '$FILE' does not exist!"
+    exit 1;
  fi
 
  case $option in
