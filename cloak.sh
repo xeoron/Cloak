@@ -6,12 +6,12 @@
 # License: GPL 2 or higher
 
 declare -r NAME="Cloak"
-declare -r VERSION="0.2.5"
+declare -r VERSION="0.2.6"
 
 option=$1
 FILE=$2
 
- if [ -z "$1" ]; then #if option is not set
+ if [ -z "$option" ]; then #if option is not set
     option="-h"
  elif [ ! -n "$FILE" ]; then
     echo " $NAME Error - File or folder name is not set!"
