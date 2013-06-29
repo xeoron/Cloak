@@ -6,19 +6,23 @@
 # License: GPL 2 or higher
 
 declare -r NAME="Cloak"
-declare -r VERSION="0.2.6"
+declare -r VERSION="0.2.7"
 
 option=$1
 FILE=$2
 
+ function fileCheck {
+   if [ ! -n "$FILE" ]; then
+      echo " $NAME Error - File or folder name is not set!"
+      exit 1;
+   elif [ ! -e $FILE ]; then
+      echo " $NAME Error - The location of '$FILE' does not exist!"
+      exit 1;
+   fi
+ }
+
  if [ -z "$option" ]; then #if option is not set
     option="-h"
- elif [ ! -n "$FILE" ]; then
-    echo " $NAME Error - File or folder name is not set!"
-    exit 1;
- elif [ ! -e $FILE ]; then
-    echo " $NAME Error - The location of '$FILE' does not exist!"
-    exit 1;
  fi
 
  case $option in
@@ -33,12 +37,14 @@ FILE=$2
         echo " "
         ;;
     -u|--uncloak)
+        fileCheck
         echo " Uncloaking $FILE ..."
         chflags -H -R nohidden "$FILE"
         echo " Adding $FILE location to Spotlight's index..."
         mdimport $FILE
         ;; 
     -c|--cloak)
+        fileCheck
         echo " Cloaking $FILE ..."
     	chflags -H -R hidden "$FILE"
     	echo " Removing $FILE location from Spotlight's index..."
