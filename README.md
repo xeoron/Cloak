@@ -95,9 +95,13 @@ software:
     Terminal
     Mac OS X.5 or higher  
 
-manual setup
+Setup
 =====
-commands:
+Automated command:
+
+	sudo ./install_cloak.sh
+
+Manual commands:
 
     cd ./cloak/
     chmod +x ./cloak.sh
