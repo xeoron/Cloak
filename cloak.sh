@@ -6,7 +6,7 @@
 # License: GPL 2 or higher
 
 declare -r NAME="Cloak"
-declare -r VERSION="0.2.7"
+declare -r VERSION="0.3.0"
 
 option=$1
 FILE=$2
@@ -32,6 +32,8 @@ FILE=$2
         echo "$NAME any file/folder from Finder and Spotlight on your Mac"
         echo "-c --cloak location from Finder and Spotlight"
         echo "-u --uncloak location from Finder and Spotlight"
+        echo "-s --show show hidden system files"
+        echo "-i --invisible hide those system files"
         echo "-v --version"
         echo "-h --help"
         echo " "
@@ -50,6 +52,16 @@ FILE=$2
     	echo " Removing $FILE location from Spotlight's index..."
     	mdutil $FILE >/dev/null
         ;;
+    -s|--show)
+        echo " Showing hidden system files"
+        defaults write com.apple.finder AppleShowAllFiles YES
+        killall -KILL Finder
+        ;;
+    -i|--invisible)
+    	echo " Hiding system files"
+    	defaults write com.apple.finder AppleShowAllFiles NO
+    	killall -KILL Finder
+    	;;
     -v|--version)
         echo " $NAME version: $VERSION"
         echo " System requirements: Mac OSX.5 Leopard or higher"

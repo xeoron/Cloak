@@ -36,6 +36,8 @@ usage
     cloak <option> /location/to/file-OR-folder
     -c --cloak location from Finder and Spotlight
     -u --uncloak location from Finder and Spotlight
+    -s --show hidden system files
+    -i --invisible hides those system files
     -v --version
     -h --help
 
