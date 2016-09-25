@@ -1,6 +1,6 @@
 #!/bin/sh -e
 #Author: Jason Campisi
-#Date: 6/30/2013
+#Date: 9/25/2016
 #version 0.2.4
 #Released under the GPL v2 or higher
 NAME="cloak"
