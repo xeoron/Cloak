@@ -1,7 +1,7 @@
 #!/bin/sh -e
 #Author: Jason Campisi
 #Date: 6/30/2013
-#version 0.2.3
+#version 0.2.4
 #Released under the GPL v2 or higher
 NAME="cloak"
 EXT="sh"
@@ -32,7 +32,7 @@ else
 fi
 
 echo " Installing $NAME to /usr/bin/ ...";
-cp ./$FILE /usr/bin/$NAME
+cp ./$FILE /opt/local/bin/$NAME
 echo " Setup complete."
 echo "Testing install with this command\n>$NAME --version";
 $NAME --version
