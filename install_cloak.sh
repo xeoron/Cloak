@@ -1,11 +1,12 @@
 #!/bin/sh -e
 #Author: Jason Campisi
 #Date: 9/25/2016
-#version 0.2.4
+#version 0.2.5
 #Released under the GPL v2 or higher
 NAME="cloak"
 EXT="sh"
 FILE="$NAME.$EXT"
+LOCATION="/opt/local/bin/"
 echo "$FILE installer:";
 
  echo " Checking if '$FILE' exists in the current folder..."
@@ -31,8 +32,8 @@ else
 	echo " Root access granted for $0";	
 fi
 
-echo " Installing $NAME to /usr/bin/ ...";
-cp ./$FILE /opt/local/bin/$NAME
+echo " Installing $NAME to $LOCATION ...";
+cp ./$FILE $LOCATION$NAME
 echo " Setup complete."
 echo "Testing install with this command\n>$NAME --version";
 $NAME --version
