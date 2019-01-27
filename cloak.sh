@@ -6,7 +6,7 @@
 # License: GPL 2 or higher
 
 declare -r NAME="Cloak"
-declare -r VERSION="0.3.0"
+declare -r VERSION="0.3.1"
 
 option=$1
 FILE=$2
@@ -33,7 +33,7 @@ FILE=$2
         echo "-c --cloak location from Finder and Spotlight"
         echo "-u --uncloak location from Finder and Spotlight"
         echo "-s --show show hidden system files"
-        echo "-i --invisible hide those system files"
+        echo "-i --invisible hide your system files"
         echo "-v --version"
         echo "-h --help"
         echo " "
