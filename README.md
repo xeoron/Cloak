@@ -1,8 +1,8 @@
 Cloak
 =====
-Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on OS X. Finder and Spotlight will not display them. 
+Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on macOS X or 11. Finder and Spotlight will not display them. 
 
-This makes it easier to mark files and folders as hidden system files. This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells OS X to pretend that those certain locations are not there. The result is it acts like those files and folders do not exist; and, since they are marked *hidden* it will not display them.
+This makes it easier to mark files and folders as hidden system files. This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells MacOS to pretend that those certain locations are not there. The result is it acts like those files and folders do not exist; and, since they are marked *hidden* it will not display them.
 
 who is this meant for?
 =====
