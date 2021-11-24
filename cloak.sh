@@ -2,11 +2,11 @@
 # File: cloak.sh
 # Purpose: to make files and folders hidden or shown in OS X's Desktop, Finder, and Spotlight
 # Author: Jason Campisi
-# Date: 1/26/2020
+# Date: 11/23/2021
 # License: GPL 2 or higher
 
 declare -r NAME="Cloak"
-declare -r VERSION="0.4.0"
+declare -r VERSION="0.5.0"
 
 option=$1
 FILE=$2
@@ -30,10 +30,10 @@ FILE=$2
         echo "Usage: $NAME <option> /location/to/folder"
         echo " "
         echo "$NAME any file/folder from Finder and Spotlight on your Mac"
-        echo "-c --cloak location from Finder and Spotlight"
-        echo "-u --uncloak location from Finder and Spotlight"
-        echo "-s --show show hidden system files"
-        echo "-i --invisible hide your system files"
+        echo "-c --cloak  |- location from Finder and Spotlight"
+        echo "-u --uncloak  |- location from Finder and Spotlight"
+        echo "-s --show  |- show hidden system files"
+        echo "-i --invisible  |- hide your system files"
         echo "-v --version"
         echo "-h --help"
         echo " "
