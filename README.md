@@ -95,7 +95,7 @@ requirements
 software:
 
     Terminal
-    Mac OS X.5 or higher  
+    macOS X.5 or higher 
 
 Setup
 =====
