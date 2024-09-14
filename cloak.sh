@@ -2,11 +2,11 @@
 # File: cloak.sh
 # Purpose: to make files and folders hidden or shown in OS X's Desktop, Finder, and Spotlight
 # Author: Jason Campisi
-# Date: 11/23/2021
+# Date: 09/14/2024
 # License: GPL 2 or higher
 
-declare -r NAME="Cloak"
-declare -r VERSION="0.5.0"
+declare -r NAME="cloak"
+declare -r VERSION="0.5.1"
 
 option=$1
 FILE=$2
