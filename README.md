@@ -1,16 +1,17 @@
 Cloak
 =====
-Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on macOS X or higher. Finder and Spotlight will not display them. 
+Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on macOS or higher. Finder and Spotlight will not display them. 
 
-This makes it easier to mark files and folders as hidden system files. This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells MacOS to pretend that those certain locations are not there. The result is it acts like those files and folders do not exist; and, since they are marked *hidden* it will not display them.
+This makes it easier to mark files and folders as hidden system files. Warning: This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells MacOS to pretend that those at certain locations are not there. The result is it acts like those files do not exist; and, since they are marked *hidden* it will not display them in Finder or Spotlight because it omits them from their index as a flag to ignore.
 
-who is this meant for?
+Files marked as hidden what is able to see them? Terminal apps, servers, etc. Basicly if an app does not use Finder to see the filesyste, then they find it.
+
+Who is this meant for?
 =====
-If you want to hide things from non-tech savvy people without having to worry about loosing access by forgetting a password or keeping safe encryption keys, then this program might be right for you. 
+If you want to hide things without having to worry about important data being seen or deleted by accident then this might be for you. From adding a safegaurd for encryption keys to maybe you have sensetive data that you only want a server to see/access (not Finder) or maybe you only want data visible during certain times during the day.
 
-I can not stress this enough: Cloak merely marks files and folders as hidden system files so that Finder (OS X's file manager) and Spotlight (the system search), omits them. Nothing more. This means that if your browse or search for a file or location you will not find it.
 
-examples
+Examples
 ======
 Cloaking the *test* folder looks like this
 
@@ -41,7 +42,7 @@ usage
     -v --version
     -h --help
 
-how to access hiden locations?
+How to access hiden locations?
 =====
 Any terminal programs can, which include the following:
 
@@ -54,7 +55,7 @@ Any terminal programs can, which include the following:
     pwd
     rm
 
-Severs, such as, *Plex Media Server*, *Apache*, and *Nginx* can find and use locations, too.
+Servers, such as, *Plex Media Server*, *Apache*, and *Nginx* can.
 
 If you hook the drive up to another machine it may be able to see those hidden locations without a terminal.
 
