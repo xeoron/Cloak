@@ -2,13 +2,13 @@ Cloak
 =====
 Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on macOS or higher. Finder and Spotlight will not display them. 
 
-This makes it easier to mark files and folders as hidden system files. Warning: This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells MacOS to pretend that those at certain locations are not there. The result is it acts like those files do not exist; and, since they are marked *hidden* it will not display them in Finder or Spotlight because it omits them from their index as a flag to ignore.
+This makes it easier to mark files as hidden system files. Warning: This does not encrypt, employ steganography, or any other file protecting feature. Instead, it merely tells MacOS to pretend that those at certain locations are not there. The result is it acts like those files do not exist; and, since they are marked *hidden* it will not display them in Finder or Spotlight because it omits them from their index as a flag to ignore.
 
-Files marked as hidden what is able to see them? Terminal apps, servers, etc. Basicly if an app does not use Finder to see the filesyste, then they find it.
+What is able to see them? Terminal apps, servers, etc. Basicly if an app does not use Finder to see the filesyste, then they find it.
 
 Who is this meant for?
 =====
-If you want to hide things without having to worry about important data being seen or deleted by accident then this might be for you. From adding a safegaurd for encryption keys to maybe you have sensetive data that you only want a server to see/access (not Finder) or maybe you only want data visible during certain times during the day.
+If you want to hide things without having to worry about important data being seen or deleted by accident then this might be for you. From adding a safegaurd for encryption keys to having sensetive data that you only want a server to see/access (not Finder) or maybe you only want data visible during certain times during the day.
 
 
 Examples
@@ -55,13 +55,13 @@ Any terminal programs can, which include the following:
     pwd
     rm
 
-Servers, such as, *Plex Media Server*, *Apache*, and *Nginx* can.
+Servers, such as, Media Servers, Apache, and Nginx.
 
-If you hook the drive up to another machine it may be able to see those hidden locations without a terminal.
+Warning: If you hook the drive up to another machine it may be able to see those hidden locations without a terminal.
 
-automate when things are findable
+Automate when things are findable
 =====
-Set the task scheduler, known as, <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/crontab.5.html#//apple_ref/doc/man/5/crontab" title="OS X Crontab Man Page">crontab</a> to cloak and uncloak files and locations for set periods of time.
+Set the task scheduler, known as, <a href="https://medium.com/@justin_ng/how-to-run-your-script-on-a-schedule-using-crontab-on-macos-a-step-by-step-guide-a7ba539acf76" title="Crontab scripts">crontab</a> to cloak and uncloak files and locations for set periods of time.
 
 Once Cloak is installed, in a terminal create a new task
 
@@ -91,11 +91,12 @@ If you want to check to see what tasks are set to run and when type into a termi
 
 	crontab -l
 
-requirements
+Requirements
 =====
-software:
+Software:
 
-    Terminal
+    Cloak
+	Terminal
     macOS X.5 or higher 
 
 Setup
