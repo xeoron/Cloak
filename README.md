@@ -1,3 +1,5 @@
+
+
 Cloak
 =====
 Sometimes the best way to hide things are in plain sight. Cloak your files so that others will not use or stumble upon them during typical use of your Mac. With a simple command, mask your files or folders from being displayed on macOS or higher. Finder and Spotlight will not display them. 
@@ -109,7 +111,7 @@ Manual commands:
 
     cd ./cloak/
     chmod +x ./cloak.sh
-    sudo cp ./cloak.sh /usr/bin/cloak
+    sudo cp ./cloak.sh /opt/local/bin/cloak
 
 
 License
