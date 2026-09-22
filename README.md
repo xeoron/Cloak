@@ -109,7 +109,7 @@ Manual commands:
 
     cd ./cloak/
     chmod +x ./cloak.sh
-    sudo cp ./cloak.sh /usr/bin/cloak
+    sudo cp ./cloak.sh /opt/local/bin/cloak
 
 
 License
